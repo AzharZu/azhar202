@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <title>Astana IT University — Главная</title>
     <link rel="stylesheet" href="style.css">
-    <title>ponytown</title>
+    <style>
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px 20px;
+            background: linear-gradient(120deg, #e0e7ff 60%, #f8fafc 100%);
+            border-radius: 20px;
+            margin: 30px auto 40px auto;
+            max-width: 700px;
+            box-shadow: 0 8px 32px rgba(79,70,229,0.10);
+        }
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #4f46e5;
+        }
+        .hero p {
+            font-size: 1.3em;
+            color: #22223b;
+            margin-bottom: 30px;
+        }
+        .hero .btn {
+            display: inline-block;
+            background: #4f46e5;
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s;
+            box-shadow: 0 4px 16px rgba(79,70,229,0.10);
+        }
+        .hero .btn:hover {
+            background: #6366f1;
+        }
+        @media (max-width: 600px) {
+            .hero {
+                padding: 30px 5px 20px 5px;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>О нас</h1>
-    <p>MY bad</p>
-    <img src="photo.png.png" alt="Наша команда" width="500" height="500">
+    <img src="лого.png" alt="Логотип Astana IT University" style="display:block; margin: 40px auto 10px auto; max-width:320px; height:auto;">
     <nav>
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О нас</a></li>
+            <li><a href="page.html">О нас</a></li>
             <li><a href="contact.html">Контакты</a></li>
         </ul>
     </nav>
+    <section class="hero">
+        <h1>Astana IT University</h1>
+        <p>
+            Добро пожаловать в Astana IT University — ведущий вуз Казахстана в сфере информационных технологий и цифровых инноваций.<br>
+            Мы готовим профессионалов будущего, способных менять мир с помощью современных знаний и технологий.
+        </p>
+        <a href="page.html" class="btn">Узнать больше</a>
+    </section>
+    <section style="max-width:700px; margin:0 auto 40px auto; text-align:center;">
+        <h2>Наши преимущества</h2>
+        <ul style="list-style:none; padding:0; margin:30px 0 0 0; display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+            <li style="background:#fff; border-radius:16px; box-shadow:0 2px 8px rgba(79,70,229,0.07); padding:20px 30px; min-width:220px;">
+                Современный кампус и лаборатории
+            </li>
+            <li style="background:#fff; border-radius:16px; box-shadow:0 2px 8px rgba(79,70,229,0.07); padding:20px 30px; min-width:220px;">
+                Партнёрства с IT-компаниями
+            </li>
+            <li style="background:#fff; border-radius:16px; box-shadow:0 2px 8px rgba(79,70,229,0.07); padding:20px 30px; min-width:220px;">
+                Международные стажировки
+            </li>
+            <li style="background:#fff; border-radius:16px; box-shadow:0 2px 8px rgba(79,70,229,0.07); padding:20px 30px; min-width:220px;">
+                Активная студенческая жизнь
+            </li>
+        </ul>
+    </section>
+    <footer style="text-align:center; color:#888; padding:20px 0 10px 0;">
+        &copy; 2025 Astana IT University. Все права защищены.
+    </footer>
 </body>
 </html>
